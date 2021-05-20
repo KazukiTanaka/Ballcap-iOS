@@ -18,7 +18,6 @@ s.source       = { :git => "https://github.com/1amageek/Ballcap-iOS.git", :tag =
 s.source_files  = "Sources/Ballcap/**/*.swift"
 s.requires_arc = true
 s.static_framework = true
-s.dependency "Firebase"
 s.dependency "Firebase/Firestore"
 s.dependency "Firebase/Storage"
 s.dependency "FirebaseFirestoreSwift"
