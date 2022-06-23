@@ -7,6 +7,7 @@
 //
 
 import FirebaseStorage
+import Foundation
 
 public enum StorageBatchError: Error {
     case invalidData(File)

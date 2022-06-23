@@ -7,7 +7,7 @@
         static let shared: FirebaseTest = FirebaseTest()
 
         init () {
-            let url: URL = Bundle.module.url(forResource: "GoogleService-Info", withExtension: "plist")!
+            let url: URL = Bundle(for: BallcapTests.self).url(forResource: "GoogleService-Info", withExtension: "plist")!
             let options: FirebaseOptions = FirebaseOptions(contentsOfFile: url.path)!
             FirebaseApp.configure(options: options)
         }

@@ -12,7 +12,7 @@ let package = Package(
             targets: ["Ballcap"]),
     ],
     dependencies: [
-        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "7.6.0"))
+        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "9.2.0"))
     ],
     targets: [
         .target(
@@ -20,7 +20,7 @@ let package = Package(
             dependencies: [
                 .product(name: "FirebaseFirestore", package: "Firebase"),
                 .product(name: "FirebaseStorage", package: "Firebase"),
-                .product(name: "FirebaseFirestoreSwift-Beta", package: "Firebase")
+                .product(name: "FirebaseFirestoreSwift", package: "Firebase")
             ]
         ),
         .testTarget(
@@ -29,7 +29,7 @@ let package = Package(
                 "Ballcap",
                 .product(name: "FirebaseFirestore", package: "Firebase"),
                 .product(name: "FirebaseStorage", package: "Firebase"),
-                .product(name: "FirebaseFirestoreSwift-Beta", package: "Firebase")
+                .product(name: "FirebaseFirestoreSwift", package: "Firebase")
             ],
             resources: [
                 .process("GoogleService-Info.plist")

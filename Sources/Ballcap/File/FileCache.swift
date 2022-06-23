@@ -7,6 +7,7 @@
 //
 
 import FirebaseStorage
+import Foundation
 
 internal final class FileCache {
 
